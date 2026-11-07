@@ -72,14 +72,9 @@ double sim = CosineSimilarity.between(e1, e2);
 - `tokenUsage()` : nombre de tokens d'entrée, de sortie et total. La facturation se fait par million de tokens.
 - `CosineSimilarity.between` : valeur entre -1 et 1. Plus elle est proche de 1, plus les phrases ont un sens proche.
 
-**Pour l'email (test 1) :**
-
-- Le LLM n'a pas d'horloge, donc il ne peut pas donner l'heure exacte.
-- Chaque appel à `chat()` est indépendant : le modèle n'a pas de mémoire entre deux appels et ne retrouve pas mon nom donné dans la première question.
-
 ### Ce que j'ai appris
 
-> À reformuler avec mes propres mots avant de rendre le fichier.
+
 
 - Un modèle de chat se configure avec le pattern builder (clé, nom du modèle, température). La clé API se met dans une variable d'environnement et pas dans le code.
 - La température contrôle le caractère aléatoire de la réponse.
@@ -92,6 +87,3 @@ double sim = CosineSimilarity.between(e1, e2);
 
 ---
 
-## Utilisation de l'IA pour le reste du TP
-
-> À compléter (tests 5 à 7, partie Web) si j'utilise l'IA, ou écrire « Je n'ai pas utilisé l'IA ».
