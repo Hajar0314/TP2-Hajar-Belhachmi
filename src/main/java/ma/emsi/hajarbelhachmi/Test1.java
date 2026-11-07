@@ -21,22 +21,12 @@ public class Test1 {
                 .temperature(0.7)
                 .build();
 
-        // 1) Question simple
-        poser(model, "Quelle est la capitale du Maroc ?");
-
-        // 2) L'heure qu'il est
-        poser(model, "Quelle heure est-il ?");
-
-        // 3) Deux "questions" indépendantes : le modèle n'a pas de mémoire entre deux appels
-        poser(model, "Bonjour, je m'appelle Hajar.");
-        poser(model, "Quel est mon nom ?");
-
-        // 4) Question du Test 5 SANS RAG (pour comparer avec la réponse du Test 5)
-        poser(model, "Comment s'appelle le chat de Pierre ?");
+        // 5) Question météo SANS outils (Test 7)
+        poser(model, "Je dois partir dans 2 jours à Paris ; j'y resterai 3 jours. Est-ce que je dois mettre un parapluie dans mes valises ?");
     }
 
     private static void poser(ChatModel model, String question) {
-        System.out.println("==================================================");
+        System.out.println("==========S========================================");
         System.out.println("Question : " + question);
         String reponse = model.chat(question);
         System.out.println("Réponse  : " + reponse);

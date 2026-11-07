@@ -37,26 +37,25 @@
             <artifactId>langchain4j-google-genai</artifactId>
         </dependency>
 
-        <!-- Test 4 : embeddings intégré. MIS EN COMMENTAIRE pour le Test 5
+        <!-- Test 4 : embeddings intégré. EN COMMENTAIRE depuis le Test 5
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-embeddings-bge-small-en-v15</artifactId>
         </dependency>
         -->
 
-        <!-- Test 5 : ACTIVE -->
+        <!-- Test 5 / 6 : RAG facile -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-easy-rag</artifactId>
         </dependency>
 
-        <!-- Test 7 : à DECOMMENTER au Test 7
+        <!-- Test 7 : Gson pour l'outil météo -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.14.0</version>
         </dependency>
-        -->
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
