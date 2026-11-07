@@ -2,7 +2,7 @@ package ma.emsi.hajarbelhachmi;
 
 import dev.langchain4j.data.embedding.Embedding;
 import dev.langchain4j.model.embedding.EmbeddingModel;
-import dev.langchain4j.model.embedding.onnx.bgesmallenv15.BgeSmallEnV15EmbeddingModel; // BGE : à mettre en commentaire au Test 5
+// import dev.langchain4j.model.embedding.onnx.bgesmallenv15.BgeSmallEnV15EmbeddingModel; // BGE : en commentaire depuis le Test 5
 import dev.langchain4j.model.google.genai.GoogleGenAiEmbeddingModel;
 import dev.langchain4j.store.embedding.CosineSimilarity;
 
@@ -10,7 +10,7 @@ import java.time.Duration;
 
 /**
  * Test 4 : similarité de phrases avec 2 modèles d'embeddings.
-
+ * Le modèle intégré BGE est en commentaire depuis le Test 5 (conflit avec easy-rag).
  */
 public class Test4Embeddings {
 
@@ -30,9 +30,9 @@ public class Test4Embeddings {
                 {"La voiture roule vite sur l'autoroute.", "Les bananes sont riches en potassium."} // sans rapport
         };
 
-        // ---- Modèle intégré (anglais) : à mettre en commentaire au Test 5 ----
-        EmbeddingModel bge = new BgeSmallEnV15EmbeddingModel();
-        afficher("BGE small en v1.5 (intégré)", bge, couples);
+        // ---- Modèle intégré (anglais) : en commentaire depuis le Test 5 ----
+        // EmbeddingModel bge = new BgeSmallEnV15EmbeddingModel();
+        // afficher("BGE small en v1.5 (intégré)", bge, couples);
         // ---- fin du bloc BGE ----
 
         // ---- Modèle externe de Google ----

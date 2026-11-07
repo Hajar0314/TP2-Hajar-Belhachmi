@@ -30,6 +30,9 @@ public class Test1 {
         // 3) Deux "questions" indépendantes : le modèle n'a pas de mémoire entre deux appels
         poser(model, "Bonjour, je m'appelle Hajar.");
         poser(model, "Quel est mon nom ?");
+
+        // 4) Question du Test 5 SANS RAG (pour comparer avec la réponse du Test 5)
+        poser(model, "Comment s'appelle le chat de Pierre ?");
     }
 
     private static void poser(ChatModel model, String question) {

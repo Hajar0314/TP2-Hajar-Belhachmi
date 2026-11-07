@@ -37,20 +37,20 @@
             <artifactId>langchain4j-google-genai</artifactId>
         </dependency>
 
-        <!-- Test 4 : embeddings intégré. A METTRE EN COMMENTAIRE au Test 5 -->
+        <!-- Test 4 : embeddings intégré. MIS EN COMMENTAIRE pour le Test 5
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-embeddings-bge-small-en-v15</artifactId>
         </dependency>
+        -->
 
-        <!-- Test 5 : à ajouter au Test 5 (décommente à ce moment-là)
+        <!-- Test 5 : ACTIVE -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-easy-rag</artifactId>
         </dependency>
-        -->
 
-        <!-- Test 7 : à ajouter au Test 7 (décommente à ce moment-là)
+        <!-- Test 7 : à DECOMMENTER au Test 7
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -58,7 +58,6 @@
         </dependency>
         -->
 
-        <!-- Logging -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
